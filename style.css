@@ -1,0 +1,129 @@
+body {
+    /* background-color: #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#calculator_container {
+    background-color: #06a94d;
+    padding: 10px;
+    width: 300px;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+
+}
+
+#calculator_display {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    font-size: x-large;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+    border-radius: 10px;
+
+}
+
+#calculator_keys {
+    padding: 5px;
+    display: grid;
+    height: 200px;
+    min-height: 150px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+}
+
+.key {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #059142;
+    background-color: #059142;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+
+.key_1 {
+    grid-row-start: 3;
+}
+
+.key_2 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.key_3 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+.key_4 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.key_5 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.key_6 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.key_7 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.key_8 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.key_9 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.key_0 {
+    grid-row-start: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.key_eq {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+.key_add {
+    grid-row-start: 3;
+    grid-column-start: 4;
+}
+
+.key_subtract {
+    grid-column-start: 4;
+}
+
+.key_multiply {
+    grid-row-start: 1;
+}
+
+.key_divide {
+    grid-row-start: 2;
+}
+
+.key_ce {
+    grid-row-start: 4;
+    grid-column-start: 3;
+
+}
